@@ -3,6 +3,7 @@ package com.book.dan.beatbox;
 public class Sound {
     private String mAssetPath;
     private String mName;
+    private int mSoundId;
 
     public Sound(String assetPath){
         mAssetPath = assetPath;
@@ -17,5 +18,13 @@ public class Sound {
 
     public String getName() {
         return mName;
+    }
+
+    public int getSoundId() {
+        return mSoundId;
+    }
+
+    public void setSoundId(int soundId) {
+        mSoundId = soundId;
     }
 }
