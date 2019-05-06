@@ -4,7 +4,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.book.dan.beatbox.SoundViewModel"/>
+            type="com.book.dan.beatbox.view.SoundViewModel"/>
     </data>
     <FrameLayout
         android:layout_width="match_parent"

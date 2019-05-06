@@ -1,4 +1,4 @@
-package com.book.dan.beatbox;
+package com.book.dan.beatbox.model;
 
 import android.content.Context;
 import android.content.res.AssetFileDescriptor;
@@ -19,10 +19,12 @@ public class BeatBox {
     private AssetManager mAssetManager;
     private List<Sound> mSounds = new ArrayList<>();
     private SoundPool mSoundPool;
+    private float mSpeed;
 
     public BeatBox(Context context){
         mAssetManager = context.getAssets();
         mSoundPool = new SoundPool(MAX_SOUNDS, AudioManager.STREAM_MUSIC,0);
+        mSpeed = 1.0f;
         loadSamples();
     }
 
@@ -62,10 +64,14 @@ public class BeatBox {
         if(soundId == null){
             return;
         }
-        mSoundPool.play(soundId,1.0f,1.0f,1,0,1.0f);
+        mSoundPool.play(soundId,1.0f,1.0f,1,0,mSpeed);
     }
 
     public void release(){
         mSoundPool.release();
+    }
+
+    public void setSoundPoolSpeed(float speed){
+        mSpeed = speed;
     }
 }

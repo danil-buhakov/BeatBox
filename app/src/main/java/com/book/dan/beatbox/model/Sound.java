@@ -1,4 +1,4 @@
-package com.book.dan.beatbox;
+package com.book.dan.beatbox.model;
 
 public class Sound {
     private String mAssetPath;

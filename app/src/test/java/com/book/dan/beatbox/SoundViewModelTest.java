@@ -1,5 +1,9 @@
 package com.book.dan.beatbox;
 
+import com.book.dan.beatbox.model.BeatBox;
+import com.book.dan.beatbox.model.Sound;
+import com.book.dan.beatbox.view.SoundViewModel;
+
 import org.junit.Before;
 import org.junit.Test;
 
