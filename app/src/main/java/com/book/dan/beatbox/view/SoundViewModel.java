@@ -1,6 +1,9 @@
-package com.book.dan.beatbox;
+package com.book.dan.beatbox.view;
 
 import android.databinding.BaseObservable;
+
+import com.book.dan.beatbox.model.BeatBox;
+import com.book.dan.beatbox.model.Sound;
 
 public class SoundViewModel extends BaseObservable {
     private Sound mSound;

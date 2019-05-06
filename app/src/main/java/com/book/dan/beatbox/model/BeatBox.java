@@ -1,11 +1,10 @@
-package com.book.dan.beatbox;
+package com.book.dan.beatbox.model;
 
 import android.content.Context;
 import android.content.res.AssetFileDescriptor;
 import android.content.res.AssetManager;
 import android.media.AudioManager;
 import android.media.SoundPool;
-import android.provider.MediaStore;
 import android.util.Log;
 
 import java.io.IOException;
