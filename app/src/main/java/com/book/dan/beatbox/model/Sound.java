@@ -3,7 +3,7 @@ package com.book.dan.beatbox.model;
 public class Sound {
     private String mAssetPath;
     private String mName;
-    private int mSoundId;
+    private Integer mSoundId;
 
     public Sound(String assetPath){
         mAssetPath = assetPath;
@@ -20,11 +20,11 @@ public class Sound {
         return mName;
     }
 
-    public int getSoundId() {
+    public Integer getSoundId() {
         return mSoundId;
     }
 
-    public void setSoundId(int soundId) {
+    public void setSoundId(Integer soundId) {
         mSoundId = soundId;
     }
 }

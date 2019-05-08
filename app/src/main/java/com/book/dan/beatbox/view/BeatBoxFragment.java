@@ -36,7 +36,7 @@ public class BeatBoxFragment extends Fragment {
         binding.seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                float result = 1.0f/100* progress;
+                float result = 1.0f/100 * progress;
                 mBeatBox.setSoundPoolSpeed(result);
             }
 
